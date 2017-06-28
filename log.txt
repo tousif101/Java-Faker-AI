@@ -1,0 +1,352 @@
+commit 44c5f92177c553f0700e2ebbf218da59c37745de
+Author: Tousif Chowdhury <tac5780@rit.edu>
+Date:   Wed Apr 29 00:23:18 2015 -0400
+
+    The latest version
+
+commit 08246c5569e46ffc3b5ea6cc44fd448bd330b51d
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Tue Apr 28 21:00:48 2015 -0400
+
+    newer version from Tousif at 9P.M.
+
+commit 301836457afed20068a6c17908737d5c7d73204c
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Tue Apr 28 00:43:58 2015 -0400
+
+    removed junk, restored if statement of a case that
+    clears entire set to empty when there's no wall move count
+    remaining
+
+commit 6a4090ec2b884f6a3c3e5f7ce55f44d3c8bbc35e
+Author: Tousif Chowdhury <tac5780@rit.edu>
+Date:   Tue Apr 28 00:29:07 2015 -0400
+
+    I checked all the walls that can over lap and i put it in.
+
+commit 3840f42d7ef6e9ba08389acb0578a7c9aa070d47
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Mon Apr 27 21:59:27 2015 -0400
+
+    added debugging print statements
+
+commit 1e6dd399358e02625e1dedc4dbea72b3e2d605ea
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Mon Apr 27 21:27:49 2015 -0400
+
+    added a line in lastMove method: if wall is added,
+    also append the data in the new field called
+    "HorizontalWalls" and "VerticalWalls" to keep track of
+    wall placement.
+    After Wall placement, use that specific data to prevent add
+    the wrong Walls
+
+commit f183c5b6fdffe6463c36f390ab51096c46ae218a
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Mon Apr 27 16:05:15 2015 -0400
+
+    added if statement, that invalidate to use wall moves if
+    a player's remaining wall count is 0, clear the set.
+    Still needs to be implemented few other if statements
+    
+    current status : 90.1775148029004% Wall moves done
+    (cherry picked from commit 736ba62)
+
+commit e07604020717e4bc5181590f8c0d782b5916634d
+Author: Tousif Chowdhury <tac5780@rit.edu>
+Date:   Mon Apr 27 19:41:58 2015 -0400
+
+    copied confirmation
+
+commit dc7c0b27ca455bfec155a6310e73ac9c3baa8093
+Merge: 64f5f18 736ba62
+Author: Tousif Chowdhury <tac5780@rit.edu>
+Date:   Mon Apr 27 19:40:32 2015 -0400
+
+    Merge branch 'master' of ssh://glados.cs.rit.edu/~/Courses/CS2/Projects/Project2
+    
+    Conflicts:
+    	src/Players/FAKER/FAKER.java
+
+commit 736ba6211480fb5d989d6b71dce2529c513d3a21
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Mon Apr 27 16:05:15 2015 -0400
+
+    added if statement, that invalidate to use wall moves if
+    a player's remaining wall count is 0, clear the set.
+    Still needs to be implemented few other if statements
+    
+    current status : 90.1775148029004% Wall moves done
+
+commit 626120d094f8a1298d269993ffe5c56b82923d8b
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Mon Apr 27 14:39:22 2015 -0400
+
+    added basic (Add All) loops for getAllWallMoves method.
+    Now it needs to read neighbors to figure where the walls is
+    at and remove it out of the Set
+
+commit 3d5f5c360f88d7588dd7325d0b7588d630b81faa
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Mon Apr 27 14:05:29 2015 -0400
+
+    removed all junk codes
+
+commit 2a464e4a833d7efc9e384649be272b32d0a24fb3
+Author: Tousif Chowdhury <tac5780@rit.edu>
+Date:   Mon Apr 27 13:44:36 2015 -0400
+
+    get all wall moves prototype has been set up
+
+commit 64f5f18ff1fc8ddd3adedee147042c2c0e671b02
+Merge: fb51216 644e441
+Author: Tousif Chowdhury <tac5780@rit.edu>
+Date:   Mon Apr 27 12:04:03 2015 -0400
+
+    Merge remote-tracking branch 'origin/master'
+    
+    Conflicts:
+    	src/Players/FAKER/FAKER.java
+
+commit fb51216387162b406b9603b58561a43294d14988
+Author: Tousif Chowdhury <tac5780@rit.edu>
+Date:   Mon Apr 27 11:59:10 2015 -0400
+
+    Wall Move Implemented Prototype.
+    it works around 10%
+
+commit 8b5e7a9482405350db686e999c2f83f85852782e
+Author: Tousif Chowdhury <tac5780@rit.edu>
+Date:   Mon Apr 27 11:44:51 2015 -0400
+
+    Wall Move Implemented Prototype.
+    it works around 10%
+
+commit 644e4414d900425eea83a4eedf18d02ce5dd3afe
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Mon Apr 27 10:55:01 2015 -0400
+
+    changed verticalWallNotThere method from creating board
+    to selecting specific coordinate within the given board
+
+commit c304a614b90b0a6aec53149228d4a6af0b77b4a5
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Thu Apr 23 00:01:13 2015 -0400
+
+    changed allPossibleMoves method's commented out
+    statements to connect wallMoves in the returning
+    Set<PlayerMove>.
+
+commit 7141ee2a4e1d8fd8ddb39a8164100e59ed5cc08a
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Wed Apr 22 17:36:50 2015 -0400
+
+    Problem has been Fixed. The method added if state
+    that will catch if L-jumping location is occupied,
+    do not add to the Set.
+    
+    PieceMoves has passed all tests with 100%.
+
+commit 464a7648d8145db1d3cdec04756379d82e26ffd1
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Wed Apr 22 16:50:46 2015 -0400
+
+    added helper method jumpChecks that helps to
+    verify if the straight jump is possible.
+    Main PieceMove method has been implemented. Now it
+    correctly make straight jumps and L-jumps.
+    However, it still has problems though.
+
+commit 308b99aa9ad1057080dc34e3e7f49e9c8d1a3a71
+Merge: 7c0cdca 40b12a0
+Author: Tousif Chowdhury <tac5780@rit.edu>
+Date:   Wed Apr 22 12:42:09 2015 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 7c0cdca8e135222086b9a917516ce076657ec789
+Author: Tousif Chowdhury <tac5780@rit.edu>
+Date:   Wed Apr 22 12:41:45 2015 -0400
+
+    this is up to date
+
+commit 40b12a01e866b130fd591ac331fc2f03ceeb2a25
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Fri Apr 17 22:18:46 2015 -0400
+
+    added psuedocode for next step in pieceMoves
+
+commit d5785b5ac0a1638bceb8cb2f455b2935e0853802
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Fri Apr 17 13:03:51 2015 -0400
+
+    After first merge, allPossibleMoves method has been
+    correctly implemented. Now, it returns  wall moves
+    and piece moves altogether.
+
+commit 9562a9a432823ff52ad64c2de20f0554d046ee0e
+Merge: e9bab17 3162f50
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Fri Apr 17 12:57:51 2015 -0400
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #	src/Players/FAKER/FAKER.java
+
+commit 3162f508a8370be9c71b08b9298239825f8d43ef
+Author: Tousif Chowdhury <tac5780@rit.edu>
+Date:   Fri Apr 17 12:52:49 2015 -0400
+
+    Commit
+
+commit e9bab17266174f9c95bb1eb5b2e0ab71c5519971
+Merge: 0b80ffe 4cd9b1f
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Fri Apr 17 12:49:53 2015 -0400
+
+    Merge branch 'master' of ssh://glados.cs.rit.edu/~/Courses/CS2/Projects/Project2
+
+commit 0b80ffefd4e6918fa1a16e40143125926b015062
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Fri Apr 17 12:47:05 2015 -0400
+
+    ugh
+
+commit d11724f331f6f6bd05e8dc70653dc5fcf661b598
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Mon Apr 13 21:52:41 2015 -0400
+
+    Still implementing the straight and L jumps for piece move
+
+commit 361d03f8c8ea602912ef4dba592f9fdcdbc380d0
+Author: Tousif Chowdhury <tac5780@rit.edu>
+Date:   Fri Apr 17 12:22:49 2015 -0400
+
+    I added the vertical walls. Im working on the horizontal ones.
+
+commit 162ae3cea482c7b30e0a73f160468fa93dc12bd7
+Merge: a35d7c8 4cd9b1f
+Author: Tousif Chowdhury <tac5780@rit.edu>
+Date:   Tue Apr 14 13:49:57 2015 -0400
+
+    Merge remote-tracking branch 'origin/master'
+    
+    Conflicts:
+    	config.txt
+    	src/Players/FAKER/FAKER.java
+
+commit a35d7c8ccec021ac2e223d04115d2b6fcca5030b
+Merge: d606df4 9a3fe83
+Author: Tousif Chowdhury <tac5780@rit.edu>
+Date:   Mon Apr 13 19:58:37 2015 -0400
+
+    I added the vertical walls. Im working on the horizontal ones.
+
+commit 4cd9b1f5069ee1ea7e5ffd84c12230d0b5dfc6a5
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Mon Apr 13 21:52:41 2015 -0400
+
+    basic player move has been implemented.
+    -> it gets neighbor nodes to verify if it is possible move.
+    Still needs to be implementing possible jumps
+
+commit 76650c29c10e1ac443d46aa500a59576cd2dca61
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Mon Apr 13 20:00:04 2015 -0400
+
+    explanation comments added underneath methods
+
+commit 3d335b685524755af38b6f7c347359101699d6e4
+Merge: d606df4 9a3fe83
+Author: Tousif Chowdhury <tac5780@rit.edu>
+Date:   Mon Apr 13 19:58:37 2015 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+commit d606df4e9798d11fe6c2b251f34fe93d4103a6d8
+Author: Tousif Chowdhury <tac5780@rit.edu>
+Date:   Mon Apr 13 19:38:05 2015 -0400
+
+    I tried to start one of the wall methods. I dont think I got anywhere with  it though.
+
+commit 9a3fe8331b3c6acf1e524731cefda492c1799c59
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Mon Apr 13 19:38:05 2015 -0400
+
+    This is the entire project folder
+
+commit 80d1fab55c0b09db9ead5c8742f7157240725f5b
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Mon Apr 13 19:33:59 2015 -0400
+
+    This is the entire project folder
+
+commit 1996a37d8ed259cbbb8e94d58e0e4c70a0e1b40f
+Author: Tousif Chowdhury <tac5780@rit.edu>
+Date:   Mon Apr 13 19:26:32 2015 -0400
+
+    checking
+
+commit dafa7350c6c9143d6026743fee9ecf11a275bbb2
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Sat Apr 11 16:51:45 2015 -0400
+
+    in player module, 2 methods has been added and few are
+    moved down for sake of view. all methods that are implemented
+    are above the class file, and the methods that requires to be
+    implemented are at the bottom of the page.
+     -> copied code from the setting up page that you will start
+     working on top of that code.
+
+commit 0017a2dd8e58f1588c26243419b49f0a75753e1a
+Merge: e2e8d39 dfcd5c3
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Sat Apr 11 16:29:17 2015 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+commit e2e8d39d90a531c5d374c3bac69cfb09d6ed1ae1
+Merge: 0283136 30fec86
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Wed Apr 8 12:53:23 2015 -0400
+
+    File added : .gitignore / config.txt / quoridorclient( for part2)
+    variable name changed from i and i1 to playerID and numWalls
+    inside the init function.
+    
+    Inside config.txt, the API key has been downloaded by JayZ
+    
+    New quoridorClient has been implemented for running part2,
+    checked it runs part1 very smoothly.
+
+commit dfcd5c397d2bd00e3329e581d6a235ef44dc8178
+Author: Tousif Chowdhury <tac5780@rit.edu>
+Date:   Wed Apr 8 12:55:10 2015 -0400
+
+    checking
+
+commit 7ab6f5c08da554b12583ba623693c4b5370edbbc
+Merge: 0283136 30fec86
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Wed Apr 8 12:53:23 2015 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 0283136f6df9ab45b6061b84ed37db170f2c0802
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Wed Apr 8 12:44:03 2015 -0400
+
+    First change made for part2, removing the original project2 file
+
+commit 30fec86aec7cddfc7b188abc44a356d796c3e74e
+Author: Yongki JayZ An <hinza0188@gmail.com>
+Date:   Wed Apr 8 12:44:03 2015 -0400
+
+    First change made for part2, removing the original project2 file
+
+commit 96ab0253183c842419fafbdae4cb0799908a6a86
+Author: p142-05i <p142-05i@cs.rit.edu>
+Date:   Wed Apr 8 12:35:48 2015 -0400
+
+    These are all the new files up to Project2 part 1.
